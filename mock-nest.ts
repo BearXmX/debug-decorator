@@ -97,7 +97,7 @@ const server = http.createServer((req, res) => {
             return
           }
 
-          // 方法装饰器为空，正常返回
+          // 被方法参数装饰的list不为空，正常返回
           match.callback(responseData)
 
           res.end()
