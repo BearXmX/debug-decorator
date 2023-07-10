@@ -8,5 +8,19 @@
   </head>
   <body>
     <script src="./class-decorator.js"></script>
+
+    <script>
+      console.log('======================================================')
+
+      class A {
+        getApp() {
+          console.log(this)
+        }
+      }
+
+      const a = new A()
+
+      console.dir(a.getApp)
+    </script>
   </body>
 </html>
