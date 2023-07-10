@@ -1,3 +1,5 @@
+// ts-node 执行该文件
+
 import 'reflect-metadata'
 
 import axios from 'axios'
@@ -66,7 +68,7 @@ const server = http.createServer((req, res) => {
 
           console.log(paramsKey, 'paramsKey')
 
-          // 方法装饰器不为空，取对应映射值
+          // 被方法参数装饰的list不为空，则取对应映射值
           if (!!paramsKey.length) {
             const callbackParams: any[] = []
 
